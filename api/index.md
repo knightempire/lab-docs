@@ -13,10 +13,10 @@ Development: http://localhost:5000
 
 All API requests require authentication using JWT or PASETO tokens.
 
-<div class="api-endpoint">
-  <h3>🔐 Authentication Headers</h3>
-  <pre><code>Authorization: Bearer &lt;your-token&gt;</code></pre>
-</div>
+### 🔐 Authentication Headers
+```
+Authorization: Bearer <your-token>
+```
 
 ## Rate Limiting
 
@@ -26,20 +26,19 @@ API requests are limited to **100 requests per minute** per IP address.
 
 All API responses follow this standard format:
 
-<div class="code-block">
-<pre><code>{
+```json
+{
   "success": true,
   "data": {},
   "message": "Operation completed successfully",
   "timestamp": "2025-01-06T10:30:00Z"
 }
-</code></pre>
-</div>
+```
 
 ## Error Responses
 
-<div class="code-block">
-<pre><code>{
+```json
+{
   "success": false,
   "error": {
     "code": "VALIDATION_ERROR",
@@ -48,8 +47,7 @@ All API responses follow this standard format:
   },
   "timestamp": "2025-01-06T10:30:00Z"
 }
-</code></pre>
-</div>
+```
 
 ## HTTP Status Codes
 
@@ -101,8 +99,8 @@ All API responses follow this standard format:
 
 ## Quick Start Example
 
-<div class="code-block">
-<pre><code>// Login
+```javascript
+// Login
 const response = await fetch('/api/auth/login', {
   method: 'POST',
   headers: {
@@ -123,8 +121,7 @@ const products = await fetch('/api/products', {
     'Authorization': `Bearer ${token}`
   }
 });
-</code></pre>
-</div>
+```
 
 ## Next Steps
 
