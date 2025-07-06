@@ -4,16 +4,13 @@ The LEMS backend is built with Node.js and Express.js, providing a robust REST A
 
 ## Architecture
 
-<div class="api-endpoint">
-  <h3>🏗️ Backend Architecture</h3>
-  <ul>
-    <li><strong>Runtime</strong>: Node.js 18+</li>
-    <li><strong>Framework</strong>: Express.js</li>
-    <li><strong>Database</strong>: MongoDB with Mongoose ODM</li>
-    <li><strong>Authentication</strong>: JWT and PASETO tokens</li>
-    <li><strong>Email</strong>: Nodemailer for notifications</li>
-  </ul>
-</div>
+### 🏗️ Backend Architecture
+
+- **Runtime**: Node.js 18+
+- **Framework**: Express.js
+- **Database**: MongoDB with Mongoose ODM
+- **Authentication**: JWT and PASETO tokens
+- **Email**: Nodemailer for notifications
 
 ## Project Structure
 
@@ -75,8 +72,8 @@ backend/
 
 ### User Model
 
-<div class="code-block">
-<pre><code>const userSchema = new mongoose.Schema({
+```javascript
+const userSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -110,13 +107,12 @@ backend/
 }, {
   timestamps: true
 });
-</code></pre>
-</div>
+```
 
 ### Product Model
 
-<div class="code-block">
-<pre><code>const productSchema = new mongoose.Schema({
+```javascript
+const productSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -159,15 +155,14 @@ backend/
 }, {
   timestamps: true
 });
-</code></pre>
-</div>
+```
 
 ## API Middleware
 
 ### Authentication Middleware
 
-<div class="code-block">
-<pre><code>const authenticateToken = async (req, res, next) => {
+```javascript
+const authenticateToken = async (req, res, next) => {
   try {
     const authHeader = req.headers.authorization;
     const token = authHeader && authHeader.split(' ')[1];
@@ -198,13 +193,12 @@ backend/
     });
   }
 };
-</code></pre>
-</div>
+```
 
 ### Role Authorization
 
-<div class="code-block">
-<pre><code>const authorize = (...roles) => {
+```javascript
+const authorize = (...roles) => {
   return (req, res, next) => {
     if (!roles.includes(req.user.role)) {
       return res.status(403).json({
@@ -218,15 +212,14 @@ backend/
 
 // Usage
 router.get('/admin/users', authenticateToken, authorize('admin'), getUserList);
-</code></pre>
-</div>
+```
 
 ## Error Handling
 
 ### Global Error Handler
 
-<div class="code-block">
-<pre><code>const errorHandler = (err, req, res, next) => {
+```javascript
+const errorHandler = (err, req, res, next) => {
   let error = { ...err };
   error.message = err.message;
   
@@ -258,15 +251,14 @@ router.get('/admin/users', authenticateToken, authorize('admin'), getUserList);
     }
   });
 };
-</code></pre>
-</div>
+```
 
 ## Email Service
 
 ### Nodemailer Configuration
 
-<div class="code-block">
-<pre><code>const nodemailer = require('nodemailer');
+```javascript
+const nodemailer = require('nodemailer');
 
 const transporter = nodemailer.createTransporter({
   host: process.env.EMAIL_HOST,
@@ -289,15 +281,14 @@ const sendEmail = async (options) => {
   const info = await transporter.sendMail(message);
   console.log('Message sent: %s', info.messageId);
 };
-</code></pre>
-</div>
+```
 
 ## Security Features
 
 ### Rate Limiting
 
-<div class="code-block">
-<pre><code>const rateLimit = require('express-rate-limit');
+```javascript
+const rateLimit = require('express-rate-limit');
 
 const authLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
@@ -308,13 +299,12 @@ const authLimiter = rateLimit({
 });
 
 app.use('/api/auth/login', authLimiter);
-</code></pre>
-</div>
+```
 
 ### Input Validation
 
-<div class="code-block">
-<pre><code>const { body, validationResult } = require('express-validator');
+```javascript
+const { body, validationResult } = require('express-validator');
 
 const validateUserRegistration = [
   body('email').isEmail().normalizeEmail(),
@@ -331,26 +321,24 @@ const validateUserRegistration = [
     next();
   }
 ];
-</code></pre>
-</div>
+```
 
 ## Performance Optimization
 
 ### Database Indexing
 
-<div class="code-block">
-<pre><code>// Create indexes for better query performance
+```javascript
+// Create indexes for better query performance
 userSchema.index({ email: 1 });
 userSchema.index({ role: 1, isActive: 1 });
 productSchema.index({ category: 1, status: 1 });
 productSchema.index({ name: 'text', description: 'text' });
-</code></pre>
-</div>
+```
 
 ### Caching Strategy
 
-<div class="code-block">
-<pre><code>const NodeCache = require('node-cache');
+```javascript
+const NodeCache = require('node-cache');
 const cache = new NodeCache({ stdTTL: 600 }); // 10 minutes
 
 const cacheMiddleware = (duration) => {
@@ -371,8 +359,7 @@ const cacheMiddleware = (duration) => {
     next();
   };
 };
-</code></pre>
-</div>
+```
 
 ## Next Steps
 

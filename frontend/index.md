@@ -4,16 +4,12 @@ The LEMS frontend is built with Next.js, React, and Tailwind CSS, providing a mo
 
 ## Architecture
 
-<div class="api-endpoint">
-  <h3>🏗️ Frontend Architecture</h3>
-  <ul>
-    <li><strong>Framework</strong>: Next.js 14+ with App Router</li>
-    <li><strong>UI Library</strong>: React 18+</li>
-    <li><strong>Styling</strong>: Tailwind CSS</li>
-    <li><strong>State Management</strong>: React Context + useReducer</li>
-    <li><strong>HTTP Client</strong>: Fetch API with custom hooks</li>
-  </ul>
-</div>
+### 🏗️ Frontend Architecture
+- **Framework**: Next.js 14+ with App Router
+- **UI Library**: React 18+
+- **Styling**: Tailwind CSS
+- **State Management**: React Context + useReducer
+- **HTTP Client**: Fetch API with custom hooks
 
 ## Project Structure
 
@@ -76,8 +72,8 @@ frontend/
 
 ## State Management
 
-<div class="code-block">
-<pre><code>// Context example
+```javascript
+// Context example
 const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
@@ -93,20 +89,19 @@ export const AppProvider = ({ children }) => {
   };
   
   return (
-    &lt;AppContext.Provider value={value}&gt;
+    <AppContext.Provider value={value}>
       {children}
-    &lt;/AppContext.Provider&gt;
+    </AppContext.Provider>
   );
 };
-</code></pre>
-</div>
+```
 
 ## API Integration
 
 ### Custom Hooks
 
-<div class="code-block">
-<pre><code>// useApi hook example
+```javascript
+// useApi hook example
 export const useApi = () => {
   const { token } = useContext(AppContext);
   
@@ -129,15 +124,14 @@ export const useApi = () => {
 // Usage
 const { apiCall } = useApi();
 const products = await apiCall('/products');
-</code></pre>
-</div>
+```
 
 ## Styling System
 
 ### Tailwind Configuration
 
-<div class="code-block">
-<pre><code>// tailwind.config.js
+```javascript
+// tailwind.config.js
 module.exports = {
   content: ['./src/**/*.{js,jsx}'],
   theme: {
@@ -152,13 +146,12 @@ module.exports = {
     }
   }
 };
-</code></pre>
-</div>
+```
 
 ### Component Styling
 
-<div class="code-block">
-<pre><code>// Button component example
+```javascript
+// Button component example
 const Button = ({ variant = 'primary', size = 'md', children, ...props }) => {
   const baseClasses = 'font-medium rounded-lg transition-colors';
   const variantClasses = {
@@ -172,16 +165,15 @@ const Button = ({ variant = 'primary', size = 'md', children, ...props }) => {
   };
   
   return (
-    &lt;button 
+    <button 
       className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]}`}
       {...props}
-    &gt;
+    >
       {children}
-    &lt;/button&gt;
+    </button>
   );
 };
-</code></pre>
-</div>
+```
 
 ## Performance Optimization
 
@@ -204,8 +196,8 @@ const Button = ({ variant = 'primary', size = 'md', children, ...props }) => {
 
 ### Local Development
 
-<div class="code-block">
-<pre><code># Install dependencies
+```bash
+# Install dependencies
 npm install
 
 # Start development server
@@ -216,8 +208,7 @@ npm run lint
 
 # Build for production
 npm run build
-</code></pre>
-</div>
+```
 
 ### Code Quality
 - **ESLint**: JavaScript/React linting
