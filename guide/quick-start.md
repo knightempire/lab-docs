@@ -13,16 +13,15 @@ Before you begin, ensure you have the following installed:
 
 ## 1. Clone the Repositories
 
-<div class="code-block">
-<pre><code># Clone backend repository
+```bash
+# Clone backend repository
 git clone https://github.com/knightempire/lab-backend.git
 cd lab-backend
 
 # Clone frontend repository (in a new terminal)
 git clone https://github.com/knightempire/lab-frontend.git
 cd lab-frontend
-</code></pre>
-</div>
+```
 
 ## 2. Environment Setup
 
@@ -30,8 +29,8 @@ cd lab-frontend
 
 Create a `.env` file in the backend directory:
 
-<div class="code-block">
-<pre><code># Database Configuration
+```bash
+# Database Configuration
 DB_HOST=localhost
 DB_PORT=27017
 DB_NAME=lems_db
@@ -52,43 +51,42 @@ EMAIL_PASS=your-app-password
 # Server Configuration
 PORT=5000
 NODE_ENV=development
-</code></pre>
-</div>
+```
 
 ### Frontend Configuration
 
 Create a `.env.local` file in the frontend directory:
 
-<div class="code-block">
-<pre><code># API Configuration
+```bash
+# API Configuration
 NEXT_PUBLIC_API_URL=http://localhost:5000/api
 NEXT_PUBLIC_SOCKET_URL=http://localhost:5000
 
 # App Configuration
 NEXT_PUBLIC_APP_NAME=Lab Equipment Management System
 NEXT_PUBLIC_APP_VERSION=1.0.0
-</code></pre>
-</div>
+```
 
 ## 3. Docker Setup (Recommended)
 
 ### Option A: Using Docker Compose
 
-<div class="code-block">
-<pre><code># Backend
+```bash
+# Backend
 cd lab-backend
 docker-compose up --build
 
 # Frontend (in a new terminal)
 cd lab-frontend
 docker-compose up --build
-</code></pre>
-</div>
+```
 
 ### Option B: Manual Setup
 
-<div class="code-block">
-<pre><code># Backend
+### Option B: Manual Setup
+
+```bash
+# Backend
 cd lab-backend
 npm install
 npm run dev
@@ -97,8 +95,7 @@ npm run dev
 cd lab-frontend
 npm install
 npm run dev
-</code></pre>
-</div>
+```
 
 ## 4. Access the Application
 
@@ -110,21 +107,13 @@ Once both services are running:
 
 ## 5. Default Login Credentials
 
-<div class="api-endpoint">
-  <h3>🔐 Default Admin Account</h3>
-  <ul>
-    <li><strong>Email</strong>: admin@lems.com</li>
-    <li><strong>Password</strong>: admin123</li>
-  </ul>
-</div>
+### 🔐 Default Admin Account
+- **Email**: admin@lems.com
+- **Password**: admin123
 
-<div class="api-endpoint">
-  <h3>👤 Default User Account</h3>
-  <ul>
-    <li><strong>Email</strong>: user@lems.com</li>
-    <li><strong>Password</strong>: user123</li>
-  </ul>
-</div>
+### 👤 Default User Account
+- **Email**: user@lems.com
+- **Password**: user123
 
 ## 6. Verify Installation
 
@@ -139,32 +128,24 @@ Test the installation by:
 
 ### Common Issues
 
-<div class="api-endpoint">
-  <h4>❌ Port Already in Use</h4>
-  <p>If ports 3000 or 5000 are already in use, you can change them:</p>
-  <ul>
-    <li>Backend: Change <code>PORT</code> in <code>.env</code></li>
-    <li>Frontend: Use <code>npm run dev -- -p 3001</code></li>
-  </ul>
-</div>
+## 7. Troubleshooting
 
-<div class="api-endpoint">
-  <h4>❌ Database Connection Failed</h4>
-  <p>Ensure MongoDB is running:</p>
-  <ul>
-    <li>Docker: <code>docker run -d -p 27017:27017 mongo</code></li>
-    <li>Local: Start MongoDB service</li>
-  </ul>
-</div>
+### ❌ Port Already in Use
+If ports 3000 or 5000 are already in use, you can change them:
+- Backend: Change `PORT` in `.env`
+- Frontend: Use `npm run dev -- -p 3001`
 
-<div class="api-endpoint">
-  <h4>❌ Module Not Found</h4>
-  <p>Clear node_modules and reinstall:</p>
-  <ul>
-    <li><code>rm -rf node_modules package-lock.json</code></li>
-    <li><code>npm install</code></li>
-  </ul>
-</div>
+### ❌ Database Connection Failed
+Ensure MongoDB is running:
+- Docker: `docker run -d -p 27017:27017 mongo`
+- Local: Start MongoDB service
+
+### ❌ Module Not Found
+Clear node_modules and reinstall:
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
 
 ## Next Steps
 
