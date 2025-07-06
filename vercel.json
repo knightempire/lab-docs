@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".vitepress/dist",
+  "installCommand": "npm install",
+  "devCommand": "npm run dev",
+  "framework": "vitepress",
+  "builds": [
+    { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": ".vitepress/dist" } }
+  ]
+}
