@@ -6,24 +6,21 @@ Authentication endpoints for user login, registration, and token management.
 
 Authenticate a user and receive access tokens.
 
-<div class="api-endpoint">
-  <h3>POST /api/auth/login</h3>
-</div>
+### POST /api/auth/login
 
 ### Request Body
 
-<div class="code-block">
-<pre><code>{
+```json
+{
   "email": "user@example.com",
   "password": "password123"
 }
-</code></pre>
-</div>
+```
 
 ### Response
 
-<div class="code-block">
-<pre><code>{
+```json
+{
   "success": true,
   "data": {
     "user": {
@@ -38,13 +35,12 @@ Authenticate a user and receive access tokens.
   },
   "message": "Login successful"
 }
-</code></pre>
-</div>
+```
 
 ### Example
 
-<div class="code-block">
-<pre><code>const loginUser = async (email, password) => {
+```javascript
+const loginUser = async (email, password) => {
   try {
     const response = await fetch('/api/auth/login', {
       method: 'POST',
@@ -65,8 +61,7 @@ Authenticate a user and receive access tokens.
     console.error('Login failed:', error);
   }
 };
-</code></pre>
-</div>
+```
 
 ## Register
 
