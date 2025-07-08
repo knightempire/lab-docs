@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  lems-docs:
+    build: .
+    ports:
+      - "3000:4173"  # Fixed: Map to correct VitePress preview port
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - lems-network
+
+  # Development service
+  lems-docs-dev:
+    build: .
+    ports:
+      - "3001:4173"  # Fixed: Map to correct port
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run dev  # This will override the Dockerfile CMD
+    environment:
+      - NODE_ENV=development
+    networks:
+      - lems-network
+
+networks:
+  lems-network:
+    driver: bridge  # Fixed: Create network instead of external
