@@ -15,7 +15,7 @@ Meet the people behind the Lab Equipment Management System.
   <tbody>
     <tr>
       <td align="center">
-        <img src="../../public/team/abinesh.jpg" alt="Abinesh T" width="56">
+        <img src="" alt="Abinesh T" width="56">
       </td>
       <td>
         <strong>Abinesh T</strong><br>
@@ -26,12 +26,12 @@ Meet the people behind the Lab Equipment Management System.
         <a href="https://github.com/knightempire" target="_blank">GitHub</a>
       </td>
       <td align="center">
-        <a href="https://www.linkedin.com/in/abinesh-t/" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/abineshtamizhselvan/" target="_blank">LinkedIn</a>
       </td>
     </tr>
     <tr>
       <td align="center">
-        <img src="../../public/team/raam.jpg" alt="Raam Prthap RV" width="56">
+        <img src="" alt="Raam Prthap RV" width="56">
       </td>
       <td>
         <strong>Raam Prthap RV</strong><br>
@@ -47,7 +47,7 @@ Meet the people behind the Lab Equipment Management System.
     </tr>
     <tr>
       <td align="center">
-        <img src="../../public/team/akshay.jpg" alt="Akshay K S" width="56">
+        <img src="" alt="Akshay K S" width="56">
       </td>
       <td>
         <strong>Akshay K S</strong><br>
@@ -58,12 +58,12 @@ Meet the people behind the Lab Equipment Management System.
         <a href="https://github.com/akshayks13" target="_blank">GitHub</a>
       </td>
       <td align="center">
-        <a href="https://www.linkedin.com/in/akshayks13/" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/akshay-ks-312133292/" target="_blank">LinkedIn</a>
       </td>
     </tr>
     <tr>
       <td align="center">
-        <img src="../../public/team/santhosh.jpg" alt="Santhosh A S" width="56">
+        <img src="" alt="Santhosh A S" width="56">
       </td>
       <td>
         <strong>Santhosh A S</strong><br>
@@ -74,12 +74,12 @@ Meet the people behind the Lab Equipment Management System.
         <a href="https://github.com/Santhosh292K" target="_blank">GitHub</a>
       </td>
       <td align="center">
-        <a href="https://www.linkedin.com/in/santhosh-a-s-2a7b232a2/" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/santhosh292k/" target="_blank">LinkedIn</a>
       </td>
     </tr>
     <tr>
       <td align="center">
-        <img src="../../public/team/sharan.jpg" alt="Sharan K" width="56">
+        <img src="" alt="Sharan K" width="56">
       </td>
       <td>
         <strong>Sharan K</strong><br>
@@ -90,7 +90,7 @@ Meet the people behind the Lab Equipment Management System.
         <a href="https://github.com/Sharan450522" target="_blank">GitHub</a>
       </td>
       <td align="center">
-        <a href="https://www.linkedin.com/in/sharan-k-2b5b232a3/" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/sharan-k-6577a8235/" target="_blank">LinkedIn</a>
       </td>
     </tr>
   </tbody>
