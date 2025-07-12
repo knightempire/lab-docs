@@ -17,7 +17,8 @@ export default defineConfig({
       { text: 'API Reference', link: '/api/' },
       { text: 'Frontend', link: '/frontend/' },
       { text: 'Backend', link: '/backend/' },
-      { text: 'Deployment', link: '/deployment/' }
+      { text: 'Deployment', link: '/deployment/' },
+      { text: 'Team', link: '/team' },
     ],
 
     sidebar: {
