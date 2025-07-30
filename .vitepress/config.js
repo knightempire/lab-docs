@@ -11,6 +11,51 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.png',
     
+    // Search configuration
+    search: {
+      provider: 'local',
+      options: {
+        placeholder: 'Search documentation...',
+        translations: {
+          button: {
+            buttonText: 'Search',
+            buttonAriaLabel: 'Search documentation'
+          },
+          modal: {
+            searchBox: {
+              resetButtonTitle: 'Clear',
+              resetButtonAriaLabel: 'Clear',
+              cancelButtonText: 'Cancel',
+              cancelButtonAriaLabel: 'Cancel'
+            },
+            startScreen: {
+              recentSearchesTitle: 'Recent',
+              noRecentSearchesText: 'No recent searches',
+              saveRecentSearchButtonTitle: 'Save to recent searches',
+              removeRecentSearchButtonTitle: 'Remove from recent searches',
+              favoriteSearchesTitle: 'Favorites',
+              removeFavoriteSearchButtonTitle: 'Remove from favorites'
+            },
+            errorScreen: {
+              titleText: 'Unable to fetch results',
+              helpText: 'You might want to check your network connection.'
+            },
+            footer: {
+              selectText: 'to select',
+              navigateText: 'to navigate',
+              closeText: 'to close'
+            },
+            noResultsScreen: {
+              noResultsText: 'No results for',
+              suggestedQueryText: 'Try searching for',
+              reportMissingResultsText: 'Believe this query should return results?',
+              reportMissingResultsLinkText: 'Let us know.'
+            }
+          }
+        }
+      }
+    },
+    
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
