@@ -59,76 +59,58 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
-      { text: 'API Reference', link: '/api/' },
       { text: 'Frontend', link: '/frontend/' },
       { text: 'Backend', link: '/backend/' },
+      { text: 'API', link: '/api/' },
       { text: 'Deployment', link: '/deployment/' },
-      { text: 'Team', link: '/team' },
+      { text: 'Team', link: '/team' }
     ],
 
     sidebar: {
       '/guide/': [
         {
-          text: 'Getting Started',
+          text: 'Guide',
+          collapsed: false,
           items: [
             { text: 'Introduction', link: '/guide/' },
-            { text: 'Quick Start', link: '/guide/quick-start' },
-            { text: 'Installation', link: '/guide/installation' },
-            { text: 'Configuration', link: '/guide/configuration' }
-          ]
-        },
-        {
-          text: 'User Guide',
-          items: [
-            { text: 'User Roles', link: '/guide/user-roles' },
-            { text: 'Request Process', link: '/guide/request-process' },
-            { text: 'Admin Panel', link: '/guide/admin-panel' }
+            { text: 'Quick Start', link: '/guide/quick-start' }
           ]
         }
       ],
       '/api/': [
         {
           text: 'API Reference',
+          collapsed: false,
           items: [
-            { text: 'Authentication', link: '/api/authentication' },
-            { text: 'Products', link: '/api/products' },
-            { text: 'Requests', link: '/api/requests' },
-            { text: 'Users', link: '/api/users' },
-            { text: 'Notifications', link: '/api/notifications' }
+            { text: 'Overview', link: '/api/' },
+            { text: 'Authentication', link: '/api/authentication' }
           ]
         }
       ],
       '/frontend/': [
         {
           text: 'Frontend',
+          collapsed: false,
           items: [
-            { text: 'Overview', link: '/frontend/' },
-            { text: 'Components', link: '/frontend/components' },
-            { text: 'Pages', link: '/frontend/pages' },
-            { text: 'State Management', link: '/frontend/state' },
-            { text: 'Styling', link: '/frontend/styling' }
+            { text: 'Overview', link: '/frontend/' }
           ]
         }
       ],
       '/backend/': [
         {
           text: 'Backend',
+          collapsed: false,
           items: [
-            { text: 'Overview', link: '/backend/' },
-            { text: 'Controllers', link: '/backend/controllers' },
-            { text: 'Models', link: '/backend/models' },
-            { text: 'Middleware', link: '/backend/middleware' },
-            { text: 'Database', link: '/backend/database' }
+            { text: 'Overview', link: '/backend/' }
           ]
         }
       ],
       '/deployment/': [
         {
-          text: 'Deployment',
+          text: 'Deployment Guide',
+          collapsed: false,
           items: [
-            { text: 'Docker Setup', link: '/deployment/docker' },
-            { text: 'Environment Variables', link: '/deployment/environment' },
-            { text: 'Production', link: '/deployment/production' }
+            { text: 'Overview', link: '/deployment/' }
           ]
         }
       ]

@@ -53,6 +53,7 @@
 
 .DocSearch-Button {
   @apply transition-all duration-200 ease-in-out;
+  margin-left: 30px;
 }
 
 .DocSearch-Button:hover {
