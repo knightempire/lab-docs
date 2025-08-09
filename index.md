@@ -40,23 +40,23 @@ features:
 
 <div class="custom-container">
 
-## 🎯 System Overview
+## System Overview
 
 The Lab Equipment Management System (LEMS) is a comprehensive platform designed to streamline laboratory operations and enhance productivity. Our system provides a complete solution for modern educational and research institutions.
 
-### 🌟 Key Benefits
+### Key Benefits
 
-- **🎓 Enhanced Learning**: Streamlined access to lab equipment for students and researchers
-- **⚡ Improved Efficiency**: Automated workflows reduce manual processes by up to 80%
-- **📈 Data-Driven Decisions**: Real-time analytics and reporting for better resource management
-- **🔒 Enhanced Security**: Role-based access control ensures equipment safety and accountability
-- **💰 Cost Optimization**: Better inventory tracking reduces equipment loss and maintenance costs
+- **Enhanced Learning**: Streamlined access to lab equipment for students and researchers
+- **Improved Efficiency**: Automated workflows reduce manual processes by up to 80%
+- **Data-Driven Decisions**: Real-time analytics and reporting for better resource management
+- **Enhanced Security**: Role-based access control ensures equipment safety and accountability
+- **Cost Optimization**: Better inventory tracking reduces equipment loss and maintenance costs
 
 </div>
 
 <div class="tech-stack-section">
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 <div class="tech-grid">
   <div class="tech-category">
@@ -120,7 +120,7 @@ The Lab Equipment Management System (LEMS) is a comprehensive platform designed 
 
 <div class="quick-links-section">
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 <div class="quick-links-grid">
   <div class="quick-link-card">
@@ -171,7 +171,7 @@ The Lab Equipment Management System (LEMS) is a comprehensive platform designed 
 
 ---
 
-## ✨ Feature Highlights
+## Feature Highlights
 
 <div class="features-grid">
   <div class="feature-card">
@@ -242,26 +242,26 @@ The Lab Equipment Management System (LEMS) is a comprehensive platform designed 
 
 <div class="support-section">
 
-## 🤝 Community & Support
+## Community & Support
 
 <div class="support-grid">
   <div class="support-item">
-    <h3>📖 Documentation</h3>
+    <h3>Documentation</h3>
     <p>Comprehensive guides, tutorials, and API references to help you get started quickly.</p>
   </div>
 
   <div class="support-item">
-    <h3>💬 Community</h3>
+    <h3>Community</h3>
     <p>Join our community discussions, share ideas, and get help from other developers.</p>
   </div>
 
   <div class="support-item">
-    <h3>🐛 Issues & Bugs</h3>
+    <h3>Issues & Bugs</h3>
     <p>Report bugs, request features, or contribute to the project on GitHub.</p>
   </div>
 
   <div class="support-item">
-    <h3>📧 Contact</h3>
+    <h3>Contact</h3>
     <p>Get in touch with our team for enterprise support and custom solutions.</p>
   </div>
 </div>
