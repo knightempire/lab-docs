@@ -6,12 +6,10 @@ import autoprefixer from 'autoprefixer'
 export default defineConfig({
   title: 'Lab Equipment Management System',
   description: 'Complete documentation for LEMS - Lab Equipment Management System',
-  
-  // Theme configuration
+
   themeConfig: {
     logo: '/logo.png',
-    
-    // Search configuration
+
     search: {
       provider: 'local',
       options: {
@@ -55,12 +53,11 @@ export default defineConfig({
         }
       }
     },
-    
+
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
-      { text: 'Frontend', link: '/frontend/' },
-      { text: 'Backend', link: '/backend/' },
+      { text: 'Development', link: '/development/' },
       { text: 'API', link: '/api/' },
       { text: 'Deployment', link: '/deployment/' },
       { text: 'Team', link: '/team' }
@@ -87,21 +84,14 @@ export default defineConfig({
           ]
         }
       ],
-      '/frontend/': [
+      '/development/': [
         {
-          text: 'Frontend',
+          text: 'Development',
           collapsed: false,
           items: [
-            { text: 'Overview', link: '/frontend/' }
-          ]
-        }
-      ],
-      '/backend/': [
-        {
-          text: 'Backend',
-          collapsed: false,
-          items: [
-            { text: 'Overview', link: '/backend/' }
+            { text: 'Overview', link: '/development/' },
+            { text: 'Frontend', link: '/development/frontend' },
+            { text: 'Backend', link: '/development/backend' }
           ]
         }
       ],
@@ -127,20 +117,15 @@ export default defineConfig({
     }
   },
 
-  // Vite configuration
   vite: {
     plugins: [react()],
     css: {
       postcss: {
-        plugins: [
-          tailwindcss,
-          autoprefixer,
-        ],
-      },
-    },
+        plugins: [tailwindcss, autoprefixer]
+      }
+    }
   },
 
-  // Custom CSS
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'stylesheet', href: '/styles.css' }]

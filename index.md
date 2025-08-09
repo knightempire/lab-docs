@@ -13,11 +13,8 @@ hero:
       text: Get Started
       link: /guide/
     - theme: alt
-      text: View API Reference
-      link: /api/
-    - theme: alt
       text: View on GitHub
-      link: https://github.com/knightempire
+      link: https://github.com/knightempire/lab-frontend
 
 features:
   - icon: 🔐
@@ -288,17 +285,17 @@ The Lab Equipment Management System (LEMS) is a comprehensive platform designed 
 }
 
 .tech-stack-section {
-  background: linear-gradient(135deg, #f6f8fa 0%, #e1e8ed 100%);
-  padding: 3rem 2rem;
-  margin: 3rem 0;
+  background: var(--vp-c-bg-soft);
+  padding: 2rem;
+  margin: 2rem 0;
   border-radius: 12px;
+  border: 1px solid var(--vp-c-divider);
 }
 
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
 }
 
 .tech-category h3 {
@@ -370,19 +367,16 @@ The Lab Equipment Management System (LEMS) is a comprehensive platform designed 
 }
 
 .quick-link-card {
-  background: white;
-  border: 1px solid #e1e8ed;
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-divider);
   border-radius: 12px;
   padding: 2rem;
   text-align: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .quick-link-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-  border-color: #3eaf7c;
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-soft);
 }
 
 .card-icon {
@@ -392,24 +386,23 @@ The Lab Equipment Management System (LEMS) is a comprehensive platform designed 
 
 .quick-link-card h3 {
   margin-bottom: 0.5rem;
-  color: #2c3e50;
+  color: var(--vp-c-text-1);
 }
 
 .quick-link-card p {
-  color: #666;
+  color: var(--vp-c-text-2);
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
 }
 
 .card-link {
-  color: #3eaf7c;
+  color: var(--vp-c-brand-1);
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s ease;
 }
 
 .card-link:hover {
-  color: #2c3e50;
+  text-decoration: underline;
 }
 
 .features-detailed {
@@ -442,7 +435,7 @@ The Lab Equipment Management System (LEMS) is a comprehensive platform designed 
 
 .support-item {
   padding: 1.5rem;
-  border-left: 4px solid #3eaf7c;
+  border-left: 4px solid var(--vp-c-brand-1);
   background: #f8fafc;
   border-radius: 0 8px 8px 0;
 }
@@ -467,27 +460,25 @@ The Lab Equipment Management System (LEMS) is a comprehensive platform designed 
 }
 
 .feature-card {
-  background: white;
-  border: 1px solid #e2e8f0;
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-divider);
   border-radius: 16px;
   overflow: hidden;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .feature-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
-  border-color: #3eaf7c;
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-soft);
 }
 
 .feature-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
   padding: 1.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
+  border-bottom: 1px solid var(--vp-c-divider);
 }
 
 .feature-icon {
@@ -508,7 +499,7 @@ The Lab Equipment Management System (LEMS) is a comprehensive platform designed 
 .feature-item {
   margin-bottom: 1.25rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid var(--vp-c-divider);
 }
 
 .feature-item:last-child {
@@ -519,7 +510,7 @@ The Lab Equipment Management System (LEMS) is a comprehensive platform designed 
 
 .feature-item strong {
   display: block;
-  color: #1e293b;
+  color: var(--vp-c-text-1);
   font-weight: 600;
   margin-bottom: 0.25rem;
   font-size: 0.95rem;
@@ -527,7 +518,7 @@ The Lab Equipment Management System (LEMS) is a comprehensive platform designed 
 
 .feature-item p {
   margin: 0;
-  color: #64748b;
+  color: var(--vp-c-text-2);
   font-size: 0.875rem;
   line-height: 1.5;
 }
