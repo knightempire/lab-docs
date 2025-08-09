@@ -287,13 +287,15 @@ LEMS is a web-based platform designed to streamline the management of laboratory
   font-weight: 600;
   text-decoration: none;
   font-size: 1.08rem;
-  transition: background 0.2s, box-shadow 0.2s;
+  transition: border-color 0.2s;
   box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  border: 2px solid transparent;
 }
 .next-step:hover {
-  background: #2563eb;
-  color: #fff;
-  box-shadow: 0 8px 20px rgba(37,99,235,0.10);
+  border-color: var(--vp-accent);
+  background: #232345;
+  color: var(--vp-text);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
 }
 
 .roles-grid.one-row, .tech-stack-grid.one-row {
