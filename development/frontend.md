@@ -2,7 +2,7 @@
 
 The LEMS frontend is built with **Next.js**, **React**, and **Tailwind CSS** for a modern, responsive, and accessible user experience.
 
-## 🏗️ Architecture
+## Architecture
 - **Framework:** Next.js 14+ (App Router)
 - **UI Library:** React 18+
 - **Styling:** Tailwind CSS
@@ -57,14 +57,14 @@ lab-frontend/
     └── utils/
 ```
 
-## ✨ Key Features
+## Key Features
 
 - **Responsive Design**: Works on all device sizes
 - **Role-based Access**: User, faculty, and admin interfaces
 - **Real-time Dashboard**: Live data, charts, notifications
 - **Reusable Components**: Button, Input, Modal, Card, DataTable, Chart, etc.
 
-## 🧩 State Management Example
+## State Management Example
 
 ```javascript
 // Context example
@@ -88,7 +88,7 @@ export const AppProvider = ({ children }) => {
 };
 ```
 
-## 🔗 API Integration Example
+## API Integration Example
 
 ```javascript
 // useApi hook example
@@ -113,7 +113,7 @@ const { apiCall } = useApi();
 const products = await apiCall('/products');
 ```
 
-## 🎨 Tailwind Configuration Example
+## Tailwind Configuration Example
 
 ```javascript
 // tailwind.config.js
@@ -133,7 +133,7 @@ module.exports = {
 };
 ```
 
-## 🖲️ Button Component Example
+## Button Component Example
 
 ```javascript
 // Button component example
@@ -159,7 +159,7 @@ const Button = ({ variant = 'primary', size = 'md', children, ...props }) => {
 };
 ```
 
-## 🛠️ Development Workflow
+## Development Workflow
 
 ```bash
 npm install      # Install dependencies
@@ -167,10 +167,3 @@ npm run dev      # Start development server
 npm run lint     # Lint code
 npm run build    # Build for production
 ```
-
-## 📚 Learn More
-
-- [Quick Start Guide](/guide/quick-start)
-- [User Roles & Permissions](/guide/user-roles)
-- [API Reference](/api/)
-- [Component Library](/frontend/components)

@@ -4,7 +4,7 @@ The LEMS backend is built with Node.js and Express.js, providing a robust REST A
 
 ## Architecture
 
-### 🏗️ Backend Architecture
+### Backend Architecture
 
 - **Runtime**: Node.js 18+
 - **Framework**: Express.js
@@ -360,10 +360,3 @@ const cacheMiddleware = (duration) => {
   };
 };
 ```
-
-## Next Steps
-
-- [Controllers](/backend/controllers) - Learn about request handlers
-- [Models](/backend/models) - Understand data models
-- [Middleware](/backend/middleware) - Explore custom middleware
-- [Database](/backend/database) - Database setup and optimization
