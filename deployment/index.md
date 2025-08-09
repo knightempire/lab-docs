@@ -600,6 +600,5 @@ upstream frontend {
 Following this guide ensures a secure, scalable, and maintainable deployment of LEMS. Regular monitoring and maintenance are crucial for optimal performance.
 
 For additional support:
-- Check the [troubleshooting guide](/guide/troubleshooting)
 - Review [API documentation](/api/)
 - Contact the development team
