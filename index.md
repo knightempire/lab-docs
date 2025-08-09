@@ -168,7 +168,6 @@ The Lab Equipment Management System (LEMS) is a comprehensive platform designed 
 
 </div>
 
-
 ---
 
 ## Feature Highlights
